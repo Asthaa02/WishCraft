@@ -104,7 +104,7 @@ title.innerHTML =
 // ----------------------------
 // Download Card
 // ----------------------------
-
+console.log(window.domtoimage);
 downloadBtn.addEventListener("click", async () => {
 
     downloadBtn.innerHTML = "Generating...";
@@ -149,3 +149,4 @@ downloadBtn.addEventListener("click", async () => {
     });
 
 });
+
