@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WishCraft</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;600&family=Playfair+Display:wght@500;700&family=Cormorant+Garamond:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <video autoplay muted loop playsinline class="bg-video">
+        <source src="love.mp4" type="video/mp4">
+    </video>
+
+
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="assets/background.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+
+        <h1>WishCraft ✨</h1>
+        <p>Create a beautiful greeting card</p>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Recipient Name">
+
+        <select id="occasion">
+            placeholder="Select Occasion"
+            <option>Birthday</option>
+            <option>Anniversary</option>
+            <option>Congratulations</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <input
+            type="text"
+            id="customOccasion"
+            placeholder="Enter Custom Occasion">
+
+        <textarea
+            id="message"
+            rows="7"
+            placeholder="Write your heartfelt message..."></textarea>
+
+        <h3>Choose Theme</h3>
+
+        <div class="themes">
+
+            <label>
+                <input type="radio" name="theme" value="blossom" checked>
+                🌸 Romantic Floral
+            </label>
+
+            <label>
+                <input type="radio" name="theme" value="midnight">
+                📜 Minimal Elegance
+            </label>
+
+            <label>
+                <input type="radio" name="theme" value="royal">
+                🎈 Celebration Party
+            </label>
+
+            <label>
+                <input type="radio" name="theme" value="vintage">
+                🦋 Nature & Watercolor
+            </label>
+
+        </div>
+
+        <button onclick="generateCard()">
+            Generate Card →
+        </button>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

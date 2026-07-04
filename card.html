@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Greeting Card</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@500;700&family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- html2canvas (Download as Image) -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <link rel="stylesheet" href="card.css">
+</head>
+
+<body>
+
+    <!-- Dynamic Background -->
+    <div id="background"></div>
+
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Main Content -->
+    <div class="page">
+
+        <!-- Greeting Card -->
+        <div class="card" id="card">
+
+            <h1 id="occasionTitle">
+                Happy Birthday
+            </h1>
+
+            <h2 id="recipient">
+                Dear Friend,
+            </h2>
+
+            <div class="divider"></div>
+
+            <div class="message-container">
+                <p id="message">
+                    Your beautiful message will appear here.
+                </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <p class="signature">
+                With Love ❤️
+            </p>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button id="downloadBtn">
+                📥 Download Card
+            </button>
+
+            <button onclick="window.location.href='index.html'">
+                ✏ Create Another
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="card.js"></script>
+
+</body>
+
+</html>

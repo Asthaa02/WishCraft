@@ -1,0 +1,363 @@
+ /* ---------------- RESET ---------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Poppins,sans-serif;
+
+    overflow-x:hidden;
+    overflow-y:auto;
+
+    color:white;
+
+}
+
+/* ---------------- VIDEO ---------------- */
+
+#backgroundVideo{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:-3;
+
+}
+
+/* ---------------- OVERLAY ---------------- */
+
+.overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+    z-index:-2;
+
+}
+
+/* ---------------- PAGE ---------------- */
+
+.page{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:70px 20px;
+
+}
+
+/* ---------------- CARD ---------------- */
+
+.card{
+
+    width:90%;
+    max-width:850px;
+
+    padding:60px;
+
+    border-radius:25px;
+
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.3);
+
+    animation:fadeUp 1s ease;
+    background-size:cover;
+    background-position:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+ 
+    border-radius:25px;
+
+}
+
+/* ---------------- OCCASION ---------------- */
+
+#occasionTitle{
+
+    text-align:center;
+
+    font-size:55px;
+
+    margin-bottom:30px;
+
+}
+
+/* ---------------- RECIPIENT ---------------- */
+
+#recipient{
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+/* ---------------- DIVIDER ---------------- */
+
+.divider{
+
+    width:120px;
+
+    height:2px;
+
+    background:white;
+
+    margin:25px auto;
+
+}
+
+/* ---------------- MESSAGE ---------------- */
+
+.message-container{
+
+    width:100%;
+
+}
+
+#message{
+
+    white-space:pre-wrap;
+
+    word-wrap:break-word;
+
+    font-size:20px;
+
+    line-height:2.1;
+
+    text-align:justify;
+
+}
+
+/* ---------------- SIGNATURE ---------------- */
+
+.signature{
+
+    margin-top:50px;
+
+    text-align:right;
+
+    font-size:24px;
+
+}
+
+/* ---------------- BUTTONS ---------------- */
+
+.buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.buttons button{
+
+    border:none;
+
+    padding:15px 28px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:#ff4d88;
+
+    color:white;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.buttons button:hover{
+
+    transform:translateY(-4px);
+
+    background:#ff2e73;
+
+}
+
+/* ---------------- THEMES ---------------- */
+
+.blossom{
+
+    font-family:Poppins,sans-serif;
+
+}
+
+.blossom #occasionTitle{
+
+    font-family:'Great Vibes',cursive;
+
+    color:#ffd4ea;
+
+    text-shadow:2px 2px 8px rgba(255,255,255,.2);
+
+}
+
+.midnight{
+
+    font-family:Poppins,sans-serif;
+
+}
+
+.midnight #occasionTitle{
+
+    font-family:'Cinzel',serif;
+
+    color:#dce7ff;
+
+}
+
+.royal{
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.royal #occasionTitle{
+
+    color:gold;
+
+}
+
+.royal .card{
+
+    border:2px solid rgba(255,215,0,.5);
+
+}
+
+.vintage{
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.vintage .card{
+
+    background:rgba(247,237,217,.88);
+
+    color:#402d1d;
+
+}
+
+.vintage .divider{
+
+    background:#402d1d;
+
+}
+
+.vintage #occasionTitle{
+
+    color:#5a3b25;
+
+}
+
+/* ---------------- ANIMATION ---------------- */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:768px){
+
+    .card{
+
+        padding:35px;
+
+    }
+
+    #occasionTitle{
+
+        font-size:38px;
+
+    }
+
+    #recipient{
+
+        font-size:24px;
+
+    }
+
+    #message{
+
+        font-size:17px;
+
+        line-height:1.8;
+
+    }
+
+    .signature{
+
+        font-size:20px;
+
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .buttons button{
+
+        width:100%;
+
+    }
+
+}
